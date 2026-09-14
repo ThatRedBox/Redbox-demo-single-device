@@ -3,7 +3,7 @@
 Redbox demo project lorem ipsum dolores si amet ...
 
 ## Wiring the sensors and actuators
-| Port     | Connection             | Module              |
+| Port     | Raspberry Pi GPIO      | Module              |
 |----------|------------------------|---------------------|
 | **D1**   | GPIO12 <br/>GPIO20     | LED red             |
 | **D2**   | GPIO21 <br/>GPIO16     | LED green           |
