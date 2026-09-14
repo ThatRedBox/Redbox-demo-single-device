@@ -101,7 +101,7 @@
                 "cols": "12"
             }
         ],
-        "order": 3,
+        "order": 2,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -234,7 +234,7 @@
                 "cols": "12"
             }
         ],
-        "order": 2,
+        "order": 3,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -381,6 +381,17 @@
         "order": 2,
         "width": "3",
         "height": "3",
+        "className": ""
+    },
+    {
+        "id": "e11347c18886a251",
+        "type": "ui-spacer",
+        "group": "1817178908f18eba",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": "2",
+        "height": "2",
         "className": ""
     },
     {
@@ -787,7 +798,7 @@
         "pin": 0,
         "dnum": 0,
         "bus": 0,
-        "x": 400,
+        "x": 460,
         "y": 100,
         "wires": [
             [
@@ -818,7 +829,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 170,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "197823ed516a456c",
@@ -831,38 +842,11 @@
         "id": "b17d94205b239af5",
         "type": "comment",
         "z": "84b9ef55d16f2efa",
-        "name": "Joystick",
+        "name": "Joystick - up/down",
         "info": "",
-        "x": 370,
+        "x": 470,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "dea9c73b99260cc5",
-        "type": "inject",
-        "z": "84b9ef55d16f2efa",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 110,
-        "y": 680,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "e6a2e7ddb1e72165",
@@ -870,7 +854,7 @@
         "z": "84b9ef55d16f2efa",
         "name": "LED trigger",
         "info": "",
-        "x": 870,
+        "x": 850,
         "y": 200,
         "wires": []
     },
@@ -886,23 +870,13 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
+        "x": 670,
         "y": 240,
         "wires": [
             [
                 "963be764d32d150c"
             ]
         ]
-    },
-    {
-        "id": "4a4db6ccee5c1823",
-        "type": "comment",
-        "z": "84b9ef55d16f2efa",
-        "name": "Initialize unused outputs to 0",
-        "info": "",
-        "x": 160,
-        "y": 640,
-        "wires": []
     },
     {
         "id": "ac4120563005f9f2",
@@ -913,8 +887,8 @@
         "pin": "2",
         "dnum": 0,
         "bus": 0,
-        "x": 380,
-        "y": 460,
+        "x": 460,
+        "y": 440,
         "wires": [
             [
                 "2fac4c1a24ccd74a",
@@ -989,8 +963,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 680,
-        "y": 680,
+        "x": 700,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1001,8 +975,8 @@
         "z": "84b9ef55d16f2efa",
         "name": "Slider",
         "info": "",
-        "x": 350,
-        "y": 420,
+        "x": 430,
+        "y": 400,
         "wires": []
     },
     {
@@ -1010,15 +984,15 @@
         "type": "function",
         "z": "84b9ef55d16f2efa",
         "name": "Range 0...100",
-        "func": "msg.payload = (((msg.payload-200)/600)*100).toFixed(1);\nreturn msg;",
+        "func": "msg.payload = (msg.payload/1024*100).toFixed(1);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 460,
+        "x": 700,
+        "y": 440,
         "wires": [
             [
                 "7f46f5a885ded26f"
@@ -1036,8 +1010,8 @@
         "freq": "200",
         "out": "pwm",
         "bcm": true,
-        "x": 1060,
-        "y": 460,
+        "x": 1080,
+        "y": 440,
         "wires": []
     },
     {
@@ -1046,8 +1020,8 @@
         "z": "84b9ef55d16f2efa",
         "name": "PWM Output",
         "info": "",
-        "x": 1050,
-        "y": 420,
+        "x": 1070,
+        "y": 400,
         "wires": []
     },
     {
@@ -1056,8 +1030,8 @@
         "z": "84b9ef55d16f2efa",
         "name": "Charts & Gauges",
         "info": "",
-        "x": 680,
-        "y": 640,
+        "x": 700,
+        "y": 620,
         "wires": []
     },
     {
@@ -1072,8 +1046,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
-        "y": 560,
+        "x": 900,
+        "y": 540,
         "wires": [
             [
                 "b40d2e2a97375429"
@@ -1091,8 +1065,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 1040,
-        "y": 560,
+        "x": 1060,
+        "y": 540,
         "wires": []
     },
     {
@@ -1101,8 +1075,8 @@
         "z": "84b9ef55d16f2efa",
         "name": "Buzzer",
         "info": "",
-        "x": 1030,
-        "y": 520,
+        "x": 1050,
+        "y": 500,
         "wires": []
     },
     {
@@ -1117,8 +1091,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 560,
+        "x": 710,
+        "y": 540,
         "wires": [
             [
                 "5b3a4df07677709e"
@@ -1136,33 +1110,9 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 860,
+        "x": 840,
         "y": 240,
         "wires": []
-    },
-    {
-        "id": "dddb696ee21b2c09",
-        "type": "ui-template",
-        "z": "84b9ef55d16f2efa",
-        "group": "",
-        "page": "66163d6146149160",
-        "ui": "",
-        "name": "Gauge speed",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "/* Strip away animations specifically from the Dashboard 2.0 gauge components */\n.nrdb-ui-gauge,\n.nrdb-ui-gauge * {\n    transition: none !important;\n    animation: none !important;\n    transition-duration: 0s !important;\n}",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "page:style",
-        "className": "",
-        "x": 440,
-        "y": 860,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "30d2875d1cf2dd05",
@@ -1173,8 +1123,8 @@
         "pin": "1",
         "dnum": 0,
         "bus": 0,
-        "x": 400,
-        "y": 160,
+        "x": 460,
+        "y": 200,
         "wires": [
             [
                 "f4708957e6aab555"
@@ -1237,8 +1187,8 @@
         "height": "5",
         "className": "",
         "interpolation": "smooth",
-        "x": 880,
-        "y": 120,
+        "x": 860,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1249,8 +1199,18 @@
         "z": "84b9ef55d16f2efa",
         "name": "Chart",
         "info": "",
-        "x": 850,
-        "y": 80,
+        "x": 830,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b052626de04c7b3f",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Joystick - left/right",
+        "info": "",
+        "x": 470,
+        "y": 160,
         "wires": []
     },
     {
@@ -1737,7 +1697,7 @@
         ]
     },
     {
-        "id": "b4d685cfb981db73",
+        "id": "d4a0b9df84d84f52",
         "type": "global-config",
         "env": [],
         "modules": {
