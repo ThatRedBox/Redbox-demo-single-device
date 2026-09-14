@@ -1,6 +1,35 @@
 ![Redbox banner](https://raw.githubusercontent.com/ThatRedBox/.github/refs/heads/main/brand/Redbox_banner.png)
 
-Redbox demo project lorem ipsum dolores si amet ...
+Three demo flows for a single [Redbox](https://github.com/ThatRedBox/Redbox-setup) device, showing
+what the box does with the sensors and actuators wired to its ports: digital in and out, analog
+inputs over the ADC, PWM, and a Dashboard you can open on your phone. Import the flows, wire up
+the modules from the table below, and you have something running to take apart and rebuild.
+
+Each demo lives on its own flow tab in the Node-RED editor, with its own page in the
+Dashboard. Only the **Motion Detection Demo** tab is enabled after import; enable the
+tab of the demo you want to try (double-click the tab → `Enable`) and click `Deploy`.
+
+## Demo 1: Motion Detector
+A motion alarm built around the motion sensor on **D3**. As long as no motion is seen,
+the green LED (**D2**) stays on. On motion, the red LED (**D1**) starts blinking, the
+Dashboard shows a *"Motion detected!"* notification and plots the event on a chart.
+The buzzer (**D4**) only sounds when the alarm is armed with the `Enable alarm` switch
+on the Dashboard; that switch can also be toggled with the momentary button on **D5**.
+
+## Demo 2: Analog Joystick
+Reads the analog inputs through the MCP3008 ADC, polled every 150 ms. The joystick on
+**A1** (CH0/CH1) is plotted live on a Dashboard chart, and pressing it down lights the
+green LED (**D2**). The slider on **A2** (CH2) drives a Dashboard gauge and dims the red
+LED (**D1**) through a PWM output; pushed near its maximum, it also starts the buzzer
+(**D4**).
+
+## Demo 3: Smartphone Gamepad
+Turns the Dashboard into a gamepad you can open on your phone: a D-pad, an A/B button
+pair and a middle section. The left and right arrows switch the red (**D1**) and green
+(**D2**) LEDs, and the A button drives the buzzer (**D4**). The other way around, pressing
+the physical button on **D5** generates a WAV beep in the flow and plays it through the
+phone's speaker. The remaining buttons are left unwired as a starting point for your
+own experiments.
 
 ## Wiring the sensors and actuators
 | Port     | Raspberry Pi GPIO      | Module              |
