@@ -1,6 +1,6 @@
 ![Redbox banner](https://raw.githubusercontent.com/ThatRedBox/.github/refs/heads/main/brand/Redbox_banner.png)
 
-Three demo flows for a single [Redbox](https://github.com/ThatRedBox/Redbox-setup) device, showing
+Three demo flows for a single [Red[box]](https://github.com/ThatRedBox) device, showing
 what the box does with the sensors and actuators wired to its ports: digital in and out, analog
 inputs over the ADC, PWM, and a Dashboard you can open on your phone. Import the flows, wire up
 the modules from the table below, and you have something running to take apart and rebuild.
