@@ -1,0 +1,1750 @@
+[
+    {
+        "id": "9815eacab722db89",
+        "type": "tab",
+        "label": "Motion Detection Demo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "84b9ef55d16f2efa",
+        "type": "tab",
+        "label": "Analog Demo",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a8ebfa6ba365b54",
+        "type": "tab",
+        "label": "Gamepad Demo",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c1f7751677b2714f",
+        "type": "tab",
+        "label": "System",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "161ae34be71e4bfc",
+        "type": "ui-base",
+        "name": "Red[box] Demo",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "fixed",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "89f4ac9355e2e62c",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "66163d6146149160",
+        "type": "ui-page",
+        "name": "Analog",
+        "ui": "161ae34be71e4bfc",
+        "path": "/Analog",
+        "icon": "waveform",
+        "layout": "grid",
+        "theme": "89f4ac9355e2e62c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1817178908f18eba",
+        "type": "ui-group",
+        "name": "Slider",
+        "page": "66163d6146149160",
+        "width": "2",
+        "height": "5",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cbc8993be583b109",
+        "type": "ui-theme",
+        "name": "Game Controller",
+        "colors": {
+            "surface": "#1c1c1c",
+            "primary": "#eb3a3a",
+            "bgPage": "#1c1c1c",
+            "groupBg": "#1c1c1c",
+            "groupOutline": "#1c1c1c"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "60831e241339fdb6",
+        "type": "ui-page",
+        "name": "Motion Detection",
+        "ui": "161ae34be71e4bfc",
+        "path": "/page3",
+        "icon": "motion-sensor",
+        "layout": "grid",
+        "theme": "89f4ac9355e2e62c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "1dbf6c438c808e31",
+        "type": "ui-group",
+        "name": "Motion",
+        "page": "60831e241339fdb6",
+        "width": "9",
+        "height": "5",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "520b459dd3ec5047",
+        "type": "ui-group",
+        "name": "Settings",
+        "page": "60831e241339fdb6",
+        "width": "3",
+        "height": "5",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "9d0c89b8b224abc5",
+        "type": "ui-page",
+        "name": "Gamepad",
+        "ui": "161ae34be71e4bfc",
+        "path": "/gamepad",
+        "icon": "gamepad",
+        "layout": "grid",
+        "theme": "cbc8993be583b109",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "b5d664f0664d602a",
+        "type": "ui-group",
+        "name": "Gamepad-right",
+        "page": "9d0c89b8b224abc5",
+        "width": "3",
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1312e2f7a44858b3",
+        "type": "ui-spacer",
+        "group": "b5d664f0664d602a",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 3,
+        "width": "1",
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "cd9ad561af765e8e",
+        "type": "ui-group",
+        "name": "Gamepad-left",
+        "page": "9d0c89b8b224abc5",
+        "width": "3",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "552c9175cd4911cf",
+        "type": "ui-spacer",
+        "group": "b5d664f0664d602a",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 4,
+        "width": "1",
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "36653c8a2806a63a",
+        "type": "ui-group",
+        "name": "Gamepad-middle",
+        "page": "9d0c89b8b224abc5",
+        "width": "3",
+        "height": "3",
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b36888df68420ba5",
+        "type": "ui-spacer",
+        "group": "36653c8a2806a63a",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "ab5746fade6f20d4",
+        "type": "ui-spacer",
+        "group": "cd9ad561af765e8e",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "8e8478c01fcac3c0",
+        "type": "ui-spacer",
+        "group": "cd9ad561af765e8e",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 3,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "3e7b1252f649b98a",
+        "type": "ui-spacer",
+        "group": "cd9ad561af765e8e",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "3db635523c3f44ea",
+        "type": "ui-spacer",
+        "group": "cd9ad561af765e8e",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 7,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "a4f38bd39ce02de8",
+        "type": "ui-group",
+        "name": "Joystick",
+        "page": "66163d6146149160",
+        "width": "10",
+        "height": "4",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d09f93886ab52275",
+        "type": "ui-spacer",
+        "group": "520b459dd3ec5047",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "className": ""
+    },
+    {
+        "id": "ed547fbcbd98f867",
+        "type": "rpi-gpio in",
+        "z": "9815eacab722db89",
+        "name": "Digital 3",
+        "pin": "13",
+        "intype": "tri",
+        "debounce": "25",
+        "read": true,
+        "bcm": true,
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "3088656007e714bb",
+                "8c87783ee70aafc8",
+                "660b82166bfe9b46",
+                "b4e253b9c5752001",
+                "3cbe50d0aa01d4c6"
+            ]
+        ]
+    },
+    {
+        "id": "75294e5ae034b427",
+        "type": "rpi-gpio out",
+        "z": "9815eacab722db89",
+        "name": "Digital 2",
+        "pin": "21",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 740,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e6cd8b56d3da16d7",
+        "type": "comment",
+        "z": "9815eacab722db89",
+        "name": "Toggle switch",
+        "info": "",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b567799a5b45bd38",
+        "type": "ui-chart",
+        "z": "9815eacab722db89",
+        "group": "1dbf6c438c808e31",
+        "name": "Motion Chart",
+        "label": "",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "1",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": false,
+        "removeOlder": "15",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#eb3a3a",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": "4",
+        "className": "",
+        "interpolation": "step",
+        "x": 510,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb0dcb171b599e2d",
+        "type": "ui-switch",
+        "z": "9815eacab722db89",
+        "name": "Enable alarm",
+        "label": "Enable alarm",
+        "group": "520b459dd3ec5047",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": false,
+        "topic": "enable",
+        "topicType": "str",
+        "style": "",
+        "className": "redbox-switch",
+        "layout": "row-spread-swapped",
+        "clickableArea": "switch",
+        "onvalue": "{\"enable\":true}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"enable\":false}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "3088656007e714bb"
+            ]
+        ]
+    },
+    {
+        "id": "3088656007e714bb",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Alarm enabled?",
+        "func": "// Handle enable/disable settings\nif (msg.topic === \"enable\") {\n    context.set(\"enabled\", msg.payload.enable, \"file\");\n    return null;\n}\n\n// Handle the actual signal\n// When the alarm is disabled, off-messages should still pass through\n// while on messages should be blocked.\nif ( (!context.get(\"enabled\", \"file\") && msg.payload?false:true) || context.get(\"enabled\", \"file\")){\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "76293bb4d8b48766"
+            ]
+        ]
+    },
+    {
+        "id": "d967aa32dbc7032b",
+        "type": "rpi-gpio in",
+        "z": "9815eacab722db89",
+        "name": "Digital 5",
+        "pin": "23",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "5821b792dc7e2570"
+            ]
+        ]
+    },
+    {
+        "id": "5821b792dc7e2570",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Toggle",
+        "func": "// Toggle on positive edge\nlet newmsg = {\n    topic: \"toggled\",\n    payload: 0\n}\n\nif ( msg.payload?true:false ){\n    let state = context.get(\"toggle\") || false;  // get previous state from the context, default false if none\n    state = !state;                              // invert the state\n    context.set(\"toggle\", state);                // remember it by storing to the context\n    newmsg.payload = state;\n    return newmsg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "fb0dcb171b599e2d"
+            ]
+        ]
+    },
+    {
+        "id": "8c87783ee70aafc8",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Invert",
+        "func": "msg.payload = !msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "75294e5ae034b427"
+            ]
+        ]
+    },
+    {
+        "id": "fc98161553b3daab",
+        "type": "rpi-gpio out",
+        "z": "9815eacab722db89",
+        "name": "Digital 1",
+        "pin": "12",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 740,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "76293bb4d8b48766",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Oscillator",
+        "func": "// 1. Check if the incoming message payload is 1 (Start oscillating)\nif (msg.payload === 1 || msg.payload === true) {\n    // If we are already running, don't start a duplicate timer\n    if (context.get('running') === true) return null;\n    let speed = 75;\n\n    // Set running state to true\n    context.set('running', true);\n    context.set('currentValue', 1); // Start with 1\n    \n    // Define the loops function\n    function toggle() {\n        // If someone set running to false in the meantime, stop the loop\n        if (context.get('running') !== true) return;\n        \n        // Get the current value and flip it (1 to 0, or 0 to 1)\n        let val = context.get('currentValue');\n        val = (val === 1) ? 0 : 1;\n        context.set('currentValue', val);\n        \n        // Send out the flipped value\n        node.send({ payload: val });\n        \n        // Run this function again after a set time\n        let timer = setTimeout(toggle, speed);\n        context.set('timerId', timer);\n    }\n    \n    // Send out the very first '1' immediately\n    msg.payload = 1;\n    node.send(msg);\n    \n    // Start the looping sequence\n    let timer = setTimeout(toggle, speed);\n    context.set('timerId', timer);\n    return null;\n}\n\n// 2. Check if the incoming message payload is 0 (Stop oscillating)\nif (msg.payload === 0 || msg.payload === false) {\n    context.set('running', false);\n    \n    // Clear the active timer so it breaks the loop immediately\n    let timerId = context.get('timerId');\n    if (timerId) {\n        clearTimeout(timerId);\n    }\n    \n    // Optional: Send out a final 0 to reset your output system\n    msg.payload = 0;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "f7d15fd8bef8999d"
+            ]
+        ]
+    },
+    {
+        "id": "f7d15fd8bef8999d",
+        "type": "rpi-gpio out",
+        "z": "9815eacab722db89",
+        "name": "Digital 4",
+        "pin": "25",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 740,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "660b82166bfe9b46",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Oscillator",
+        "func": "// 1. Check if the incoming message payload is 1 (Start oscillating)\nif (msg.payload === 1 || msg.payload === true) {\n    // If we are already running, don't start a duplicate timer\n    if (context.get('running') === true) return null;\n    let speed = 200;\n\n    // Set running state to true\n    context.set('running', true);\n    context.set('currentValue', 1); // Start with 1\n    \n    // Define the loops function\n    function toggle() {\n        // If someone set running to false in the meantime, stop the loop\n        if (context.get('running') !== true) return;\n        \n        // Get the current value and flip it (1 to 0, or 0 to 1)\n        let val = context.get('currentValue');\n        val = (val === 1) ? 0 : 1;\n        context.set('currentValue', val);\n        \n        // Send out the flipped value\n        node.send({ payload: val });\n        \n        // Run this function again after a set time\n        let timer = setTimeout(toggle, speed);\n        context.set('timerId', timer);\n    }\n    \n    // Send out the very first '1' immediately\n    msg.payload = 1;\n    node.send(msg);\n    \n    // Start the looping sequence\n    let timer = setTimeout(toggle, speed);\n    context.set('timerId', timer);\n    return null;\n}\n\n// 2. Check if the incoming message payload is 0 (Stop oscillating)\nif (msg.payload === 0 || msg.payload === false) {\n    context.set('running', false);\n    \n    // Clear the active timer so it breaks the loop immediately\n    let timerId = context.get('timerId');\n    if (timerId) {\n        clearTimeout(timerId);\n    }\n    \n    // Optional: Send out a final 0 to reset your output system\n    msg.payload = 0;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "fc98161553b3daab"
+            ]
+        ]
+    },
+    {
+        "id": "5d4e9c1f31c68a74",
+        "type": "comment",
+        "z": "9815eacab722db89",
+        "name": "Buzzer",
+        "info": "",
+        "x": 730,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "cb048d14c77f4702",
+        "type": "comment",
+        "z": "9815eacab722db89",
+        "name": "LED alarm",
+        "info": "",
+        "x": 740,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3c80ac3212aae3d6",
+        "type": "comment",
+        "z": "9815eacab722db89",
+        "name": "LED ok",
+        "info": "",
+        "x": 730,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "01a039e22c95e2e4",
+        "type": "comment",
+        "z": "9815eacab722db89",
+        "name": "Motion sensor",
+        "info": "",
+        "x": 110,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ee35c6ef6214b985",
+        "type": "ui-notification",
+        "z": "9815eacab722db89",
+        "ui": "161ae34be71e4bfc",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": false,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Notification",
+        "x": 510,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4e253b9c5752001",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Message format",
+        "func": "if(msg.payload){\n    msg.payload = \"Motion detected!\"\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 500,
+        "wires": [
+            [
+                "ee35c6ef6214b985"
+            ]
+        ]
+    },
+    {
+        "id": "3cbe50d0aa01d4c6",
+        "type": "function",
+        "z": "9815eacab722db89",
+        "name": "Repeat last msg",
+        "func": "// Simply overwrite the stored message with the new one\ncontext.set('lastMsg', msg);\n\n// Return null so the original message isn't sent instantly out-of-sync\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Initialize the message storage\ncontext.set('lastMsg', null);\n\n// Start the 1-second interval loop\nconst intervalId = setInterval(() => {\n    const msgToRepeat = context.get('lastMsg');\n    if (msgToRepeat) {\n        // Safely clone and send the message downstream\n        node.send(RED.util.cloneMessage(msgToRepeat));\n    }\n}, 1000); // 1000ms = 1 second\n\n// Save the loop ID so we can clean it up later\ncontext.set('intervalId', intervalId);",
+        "finalize": "// Stop the background loop on redeploy\nconst intervalId = context.get('intervalId');\nif (intervalId) {\n    clearInterval(intervalId);\n    context.set('intervalId', null);\n}",
+        "libs": [],
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "b567799a5b45bd38"
+            ]
+        ]
+    },
+    {
+        "id": "197823ed516a456c",
+        "type": "pimcp3008",
+        "z": "84b9ef55d16f2efa",
+        "name": "Analog 1 (CH1)",
+        "dev": "3008",
+        "pin": 0,
+        "dnum": 0,
+        "bus": 0,
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "2dbc5ac71a7e42be",
+                "f4708957e6aab555"
+            ]
+        ]
+    },
+    {
+        "id": "3780e0313ac5b421",
+        "type": "inject",
+        "z": "84b9ef55d16f2efa",
+        "name": "Trigger Measurement",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "197823ed516a456c",
+                "30d2875d1cf2dd05",
+                "ac4120563005f9f2"
+            ]
+        ]
+    },
+    {
+        "id": "b17d94205b239af5",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Joystick",
+        "info": "",
+        "x": 370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dea9c73b99260cc5",
+        "type": "inject",
+        "z": "84b9ef55d16f2efa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6a2e7ddb1e72165",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "LED trigger",
+        "info": "",
+        "x": 870,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2dbc5ac71a7e42be",
+        "type": "function",
+        "z": "84b9ef55d16f2efa",
+        "name": "Click?",
+        "func": "if( msg.payload >= 900 ){\n    msg.payload = 1;\n}\nelse{\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "963be764d32d150c"
+            ]
+        ]
+    },
+    {
+        "id": "4a4db6ccee5c1823",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Initialize unused outputs to 0",
+        "info": "",
+        "x": 160,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ac4120563005f9f2",
+        "type": "pimcp3008",
+        "z": "84b9ef55d16f2efa",
+        "name": "Analog input 2",
+        "dev": "3008",
+        "pin": "2",
+        "dnum": 0,
+        "bus": 0,
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "2fac4c1a24ccd74a",
+                "c5b049d4189cd534",
+                "8994a71b02c7d2db"
+            ]
+        ]
+    },
+    {
+        "id": "2fac4c1a24ccd74a",
+        "type": "ui-gauge",
+        "z": "84b9ef55d16f2efa",
+        "name": "Analog Gauge",
+        "group": "1817178908f18eba",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "2",
+        "height": "3",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ffffff",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "150",
+                "color": "#c8c8c8",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "300",
+                "color": "#969696",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "450",
+                "color": "#5a5a5a",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "600",
+                "color": "#1e1e1e",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "768",
+                "color": "#eb3a3a",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "1024",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 680,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "771b2bbbdf283d39",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Slider",
+        "info": "",
+        "x": 350,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c5b049d4189cd534",
+        "type": "function",
+        "z": "84b9ef55d16f2efa",
+        "name": "Range 0...100",
+        "func": "msg.payload = (((msg.payload-200)/600)*100).toFixed(1);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 460,
+        "wires": [
+            [
+                "7f46f5a885ded26f"
+            ]
+        ]
+    },
+    {
+        "id": "7f46f5a885ded26f",
+        "type": "rpi-gpio out",
+        "z": "84b9ef55d16f2efa",
+        "name": "Digital 1 PWM",
+        "pin": "12",
+        "set": "",
+        "level": "0",
+        "freq": "200",
+        "out": "pwm",
+        "bcm": true,
+        "x": 1060,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "938a5a9f1f424b97",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "PWM Output",
+        "info": "",
+        "x": 1050,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1a514bff1036f824",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Charts & Gauges",
+        "info": "",
+        "x": 680,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5b3a4df07677709e",
+        "type": "function",
+        "z": "84b9ef55d16f2efa",
+        "name": "Oscillator",
+        "func": "// 1. Check if the incoming message payload is 1 (Start oscillating)\nif (msg.payload === 1 || msg.payload === true) {\n    // If we are already running, don't start a duplicate timer\n    if (context.get('running') === true) return null;\n    let speed = 100;\n\n    // Set running state to true\n    context.set('running', true);\n    context.set('currentValue', 1); // Start with 1\n    \n    // Define the loops function\n    function toggle() {\n        // If someone set running to false in the meantime, stop the loop\n        if (context.get('running') !== true) return;\n        \n        // Get the current value and flip it (1 to 0, or 0 to 1)\n        let val = context.get('currentValue');\n        val = (val === 1) ? 0 : 1;\n        context.set('currentValue', val);\n        \n        // Send out the flipped value\n        node.send({ payload: val });\n        \n        // Run this function again after a set time\n        let timer = setTimeout(toggle, speed);\n        context.set('timerId', timer);\n    }\n    \n    // Send out the very first '1' immediately\n    msg.payload = 1;\n    node.send(msg);\n    \n    // Start the looping sequence\n    let timer = setTimeout(toggle, speed);\n    context.set('timerId', timer);\n    return null;\n}\n\n// 2. Check if the incoming message payload is 0 (Stop oscillating)\nif (msg.payload === 0 || msg.payload === false) {\n    context.set('running', false);\n    \n    // Clear the active timer so it breaks the loop immediately\n    let timerId = context.get('timerId');\n    if (timerId) {\n        clearTimeout(timerId);\n    }\n    \n    // Optional: Send out a final 0 to reset your output system\n    msg.payload = 0;\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 560,
+        "wires": [
+            [
+                "b40d2e2a97375429"
+            ]
+        ]
+    },
+    {
+        "id": "b40d2e2a97375429",
+        "type": "rpi-gpio out",
+        "z": "84b9ef55d16f2efa",
+        "name": "Digital 4",
+        "pin": "25",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1040,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e7f78092cc2170e1",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Buzzer",
+        "info": "",
+        "x": 1030,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8994a71b02c7d2db",
+        "type": "function",
+        "z": "84b9ef55d16f2efa",
+        "name": "Above threshold?",
+        "func": "if( msg.payload >= 900 ){\n    msg.payload = 1;\n}\nelse{\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 560,
+        "wires": [
+            [
+                "5b3a4df07677709e"
+            ]
+        ]
+    },
+    {
+        "id": "963be764d32d150c",
+        "type": "rpi-gpio out",
+        "z": "84b9ef55d16f2efa",
+        "name": "Digital 2",
+        "pin": "21",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 860,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "dddb696ee21b2c09",
+        "type": "ui-template",
+        "z": "84b9ef55d16f2efa",
+        "group": "",
+        "page": "66163d6146149160",
+        "ui": "",
+        "name": "Gauge speed",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Strip away animations specifically from the Dashboard 2.0 gauge components */\n.nrdb-ui-gauge,\n.nrdb-ui-gauge * {\n    transition: none !important;\n    animation: none !important;\n    transition-duration: 0s !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 440,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30d2875d1cf2dd05",
+        "type": "pimcp3008",
+        "z": "84b9ef55d16f2efa",
+        "name": "Analog 1 (CH2)",
+        "dev": "3008",
+        "pin": "1",
+        "dnum": 0,
+        "bus": 0,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "f4708957e6aab555"
+            ]
+        ]
+    },
+    {
+        "id": "f4708957e6aab555",
+        "type": "ui-chart",
+        "z": "84b9ef55d16f2efa",
+        "group": "a4f38bd39ce02de8",
+        "name": "Joystick Chart",
+        "label": "",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "1024",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "1",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#eb3a3a",
+            "#1c1c1c",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "10",
+        "height": "5",
+        "className": "",
+        "interpolation": "smooth",
+        "x": 880,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c13f89be8a803400",
+        "type": "comment",
+        "z": "84b9ef55d16f2efa",
+        "name": "Chart",
+        "info": "",
+        "x": 850,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1a53c8cdfb30d98d",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "cd9ad561af765e8e",
+        "name": "Arrow Up",
+        "label": "",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow-up-bold",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 280,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82b4f47364fb9701",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "cd9ad561af765e8e",
+        "name": "Arrow Down",
+        "label": "",
+        "order": 8,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow-down-bold",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0110f27639b5a31e",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "cd9ad561af765e8e",
+        "name": "Arrow Left",
+        "label": "",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow-left-bold",
+        "iconPosition": "left",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "bb551ebee609c261"
+            ]
+        ]
+    },
+    {
+        "id": "c7ff225d853826b2",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "cd9ad561af765e8e",
+        "name": "Arrow Right",
+        "label": "",
+        "order": 6,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "arrow-right-bold",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "fc088a3d2a263832"
+            ]
+        ]
+    },
+    {
+        "id": "6c6e7b20fa313a83",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "b5d664f0664d602a",
+        "name": "Button A",
+        "label": "A",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 840,
+        "y": 200,
+        "wires": [
+            [
+                "a033d609531cb562"
+            ]
+        ]
+    },
+    {
+        "id": "eef9568baf65dcef",
+        "type": "ui-button",
+        "z": "5a8ebfa6ba365b54",
+        "group": "b5d664f0664d602a",
+        "name": "Button B",
+        "label": "B",
+        "order": 5,
+        "width": "2",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": false,
+        "enablePointerdown": true,
+        "pointerdownPayload": "1",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": true,
+        "pointerupPayload": "0",
+        "pointerupPayloadType": "str",
+        "x": 900,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb551ebee609c261",
+        "type": "rpi-gpio out",
+        "z": "5a8ebfa6ba365b54",
+        "name": "Digital 1",
+        "pin": "12",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1100,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "fc088a3d2a263832",
+        "type": "rpi-gpio out",
+        "z": "5a8ebfa6ba365b54",
+        "name": "Digital 2",
+        "pin": "21",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1100,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9ae3bf961d435180",
+        "type": "rpi-gpio in",
+        "z": "5a8ebfa6ba365b54",
+        "name": "Digital 5",
+        "pin": "23",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "6dd901d1aa80d9a6"
+            ]
+        ]
+    },
+    {
+        "id": "7bb1c8a6103cc4a9",
+        "type": "ui-audio",
+        "z": "5a8ebfa6ba365b54",
+        "group": "b5d664f0664d602a",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "mode": "src",
+        "voice": "",
+        "src": "",
+        "autoplay": "on",
+        "loop": "off",
+        "muted": "off",
+        "className": "",
+        "x": 420,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6dd901d1aa80d9a6",
+        "type": "function",
+        "z": "5a8ebfa6ba365b54",
+        "name": "Beep",
+        "func": "// ONLY allow the code to run if the button is actively pressed.\n// Adjust this if your button sends 1 on a press instead of 0.\nif (msg.payload !== 0 && msg.payload !== false) {\n    return null; // Stop the flow right here if it's a release or startup state\n}\n\n// Set a fixed frequency (800Hz is a standard alert beep)\nconst frequency = 1200;\n\n// 2. Set duration of the bleep (0.15 seconds)\nconst duration = 0.15; \nconst sampleRate = 8000;\nconst numSamples = Math.floor(sampleRate * duration);\n\n// 3. Create the audio byte array\nconst audioData = new Uint8Array(numSamples);\nfor (let i = 0; i < numSamples; i++) {\n    // Generate sine wave\n    let t = i / sampleRate;\n    let sample = Math.sin(2 * Math.PI * frequency * t);\n    \n    // Convert to an 8-bit unsigned integer (0 to 255)\n    audioData[i] = Math.floor((sample + 1) * 127.5);\n}\n\n// 4. Build standard RIFF/WAV header strings\nconst header = new Uint8Array(44);\nconst view = new DataView(header.buffer);\n\nfunction writeString(offset, string) {\n    for (let i = 0; i < string.length; i++) {\n        view.setUint8(offset + i, string.charCodeAt(i));\n    }\n}\n\nwriteString(0, 'RIFF');\nview.setUint32(4, 36 + numSamples, true);\nwriteString(8, 'WAVE');\nwriteString(12, 'fmt ');\nview.setUint32(16, 16, true);         // Subchunk1Size\nview.setUint16(20, 1, true);          // AudioFormat (PCM)\nview.setUint16(22, 1, true);          // NumChannels (Mono)\nview.setUint32(24, sampleRate, true); // SampleRate\nview.setUint32(28, sampleRate, true); // ByteRate\nview.setUint16(32, 1, true);          // BlockAlign\nview.setUint16(34, 8, true);          // BitsPerSample (8-bit)\nwriteString(36, 'data');\nview.setUint32(40, numSamples, true);\n\n// 5. Combine header and raw sound bytes into a single base64 data URL\nconst totalBuffer = new Uint8Array(header.length + audioData.length);\ntotalBuffer.set(header, 0);\ntotalBuffer.set(audioData, header.length);\n\nconst base64Data = Buffer.from(totalBuffer).toString('base64');\nconst dataUrl = \"data:audio/wav;base64,\" + base64Data +\"#\" + Math.random();;\n\n// 6. Send the data URL directly to the audio node payload\nmsg.payload = dataUrl;\nmsg.ui_update = { id: Date.now() }; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "7bb1c8a6103cc4a9"
+            ]
+        ]
+    },
+    {
+        "id": "a033d609531cb562",
+        "type": "rpi-gpio out",
+        "z": "5a8ebfa6ba365b54",
+        "name": "Digital 4",
+        "pin": "25",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1100,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cc78b2114f2c8a40",
+        "type": "edgeberry_device_device",
+        "z": "c1f7751677b2714f",
+        "name": "",
+        "x": 290,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d92ba1048dfd95f4",
+        "type": "inject",
+        "z": "c1f7751677b2714f",
+        "name": "App info",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "info",
+        "payload": "{\"name\":\"Freya\",\"version\":\"v0.4.0\",\"description\":\"Node-RED on Redbox\",\"routes\":[{\"label\":\"Dashboard\",\"path\":\"/dashboard\",\"icon\":\"fa-chart-line\",\"default\":true},{\"label\":\"Editor\",\"icon\":\"fa-pencil\",\"path\":\"/editor\"},{\"label\":\"Repository\",\"path\":\"https://github.com/ThatRedBox\",\"icon\":\"fa-brands fa-github\",\"target\":\"tab\"}]}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "cc78b2114f2c8a40"
+            ]
+        ]
+    },
+    {
+        "id": "3b7c3b74d283b2e5",
+        "type": "edgeberry_device_status",
+        "z": "c1f7751677b2714f",
+        "name": "",
+        "section": "all",
+        "onlyOnChange": true,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "860df50ecfb8fc22",
+        "type": "inject",
+        "z": "c1f7751677b2714f",
+        "name": "App status",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "status",
+        "payload": "{\"level\":\"ok\"}",
+        "payloadType": "json",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "3b7c3b74d283b2e5"
+            ]
+        ]
+    },
+    {
+        "id": "36c190767da4b5af",
+        "type": "comment",
+        "z": "c1f7751677b2714f",
+        "name": "Edgeberry Platform",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "213736a4f709103f",
+        "type": "ui-template",
+        "z": "c1f7751677b2714f",
+        "group": "",
+        "page": "",
+        "ui": "161ae34be71e4bfc",
+        "name": "Switch color",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".redbox-switch .v-selection-control--dirty .v-switch__track {\n    background-color: #EB3A3A !important;\n    opacity: 1 !important;\n}\n\n.redbox-switch .v-selection-control--dirty .v-switch__thumb {\n    background-color: #EB3A3A !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2bb56ab943941e8",
+        "type": "edgeberry_device_status",
+        "z": "c1f7751677b2714f",
+        "name": "Status alarm",
+        "section": "all",
+        "onlyOnChange": true,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3292ec84e5a97d0a",
+        "type": "function",
+        "z": "c1f7751677b2714f",
+        "name": "to status",
+        "func": "let statusmsg = {}\n\nif( msg.payload > 0 ){\n    statusmsg.topic = \"status\";\n    statusmsg.payload = {\n        \"level\":\"emergency\",\n        \"message\": \"Motion detected!\"\n    }\n}\nelse {\n    statusmsg.topic = \"status\";\n    statusmsg.payload = {\n        \"level\":\"ok\"\n    }\n}\nreturn statusmsg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 260,
+        "wires": [
+            [
+                "d2bb56ab943941e8"
+            ]
+        ]
+    },
+    {
+        "id": "b4d685cfb981db73",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-node-pi-gpio": "2.0.7",
+            "node-red-node-pi-mcp3008": "0.6.0",
+            "@edgeberry/device-node-red-contrib": "3.8.6"
+        }
+    }
+]
